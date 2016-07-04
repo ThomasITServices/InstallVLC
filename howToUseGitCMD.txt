@@ -81,5 +81,13 @@ $ git commit -m "test"
 $ git push			to update on gethub
 
 
+<userFolder>/OneDrive/ThomasITServicesPrograms/InstallVLC (master)
+$ git branch
+* master
+  v2
+
+<userFolder>/ThomasITServicesPrograms/InstallVLC (master)
+$ git checkout v2
+Switched to branch 'v2'
 
 
