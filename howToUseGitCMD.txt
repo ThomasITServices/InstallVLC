@@ -1,0 +1,85 @@
+git config --global user.name "userName"	setting up user name
+git config --global user.email "userEmail"	setting user email address
+git init <projectName>				project repository
+cd ./<projectName>/				change to project directory
+git add .					add all files to staging
+git status					show status
+git commit -m "message here"			snapshot
+git log 					logs of repository
+git log --oneline				one line repository logs
+git commit -a -m "Message here"			commit and staging in one command
+git diff 					show diff of files of the saved repository
+git diff --cached				show diff of files of the saved repository after a git add 
+
+ssh:
+ssh-keygen -t rsa -C "Edward@ThomasITServices.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/<userFolder>/.ssh/id_rsa):	press enter
+Created directory '/c/Users/Edward Thomas/.ssh'.				save location of of keys
+Enter passphrase (empty for no passphrase):					make password for ssh key
+Enter same passphrase again:
+Your identification has been saved in /c/Users/<userFolder>/.ssh/id_rsa.
+Your public key has been saved in /c/Users/<userFolder>/.ssh/id_rsa.pub.
+
+test with github:
+$ ssh -T git@github.com
+The authenticity of host 'github.com (192.0.0.0)' can't be established.
+RSA key fingerprint is SHA256:nT-------------------
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.0.0.0' (RSA) to the list of known hosts.
+Enter passphrase for key '/c/<userFolder>/.ssh/id_rsa':
+Hi towianisci! You've successfully authenticated, but GitHub does not provide shell access.
+
+add a github repository from gitHub:
+$ git remote add InstallVLC git@github.com:<user>/InstallVLC.git
+
+send to github repository:
+$ git push InstallVLC master
+Warning: Permanently added the RSA host key for IP address '192.0.0.0' to the list of known hosts.
+Enter passphrase for key '/c/Users/<userFolder>/.ssh/id_rsa':
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 499 bytes | 0 bytes/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To git@github.com:towianisci/InstallVLC.git
+ * [new branch]      master -> master
+
+git branch:
+/c/Users/<userFolder>/OneDrive/ThomasITServicesPrograms/InstallVLC (master)
+
+$ git branch
+  InstallVLC/master
+* master
+
+$ git branch v2
+
+$ git branch
+  InstallVLC/master
+* master
+  v2
+$ git checkout v2
+Switched to branch 'v2'
+
+/c/Users/<userFolder>/ThomasITServicesPrograms/InstallVLC (v2)
+$ git branch
+  InstallVLC/master
+  master
+* v2
+
+git push <nameOfRepository> <branchName>
+git pull <nameOfRepository> <branchName>
+
+/c/Users/<userFolder>/ThomasITServicesPrograms/InstallVLC (master)
+$ git merge v2
+$ git commit -m "test"
+
+or
+$ git merge v2 -m "merging from v2 after edit"
+
+$ git commit -m "test"
+$ git push			to update on gethub
+
+
+
+
