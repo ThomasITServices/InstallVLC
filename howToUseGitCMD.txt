@@ -91,3 +91,7 @@ $ git checkout v2
 Switched to branch 'v2'
 
 
+$ git push --set-upstream InstallVLCGitHub master
+$ git push
+Enter passphrase for key '<userFolder>/.ssh/id_rsa':
+Everything up-to-date
