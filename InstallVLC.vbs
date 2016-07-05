@@ -20,7 +20,7 @@ Else
 
     Dim ProgramName: ProgramName = "Install VLC"
     Dim popOnTop : popOnTop = 4096
-    Dim ProgramPath : ProgramPath = "\\netapp3\Aero_IET\Software\Applications\VLC\vlc-2.1.0-win32.exe" 
+    Dim ProgramPath : ProgramPath = "\\netapp3\Aero_IET\Software\Applications\VLC\source\vlc-2.1.0-win32.exe" 
     Dim Arg : Arg = "/L=1033 /S"
 
     Dim objShell : Set objShell = createobject("Wscript.shell")
